@@ -144,6 +144,40 @@ footer p a {
         text-decoration: none;
     }
 
+    /* Media query for Tablet and Viewpoint*/
+    @media screen and (min-width: 630px) {
+        /* tablet viewpoint: show tablet-desktop class, hide mobile class*/
+        .tablet-desktop {
+            display: block;
+        }
+        
+        .mobile {
+            display: none;
+        }
+
+        /* Tablet Viewpoint: Style rule for header*/
+        header {
+            position: static;
+            padding-bottom: 2%;
+         }
+
+         /* Tablet Viewpoint: Style rule for nav area*/
+         nav li {
+             border-top: none;
+             display: inline-block;
+             border-right: 1px solid #fff;
+         }
+
+         nav li: last-child {
+             border-right: none;
+         }
+
+         nav li a {
+             padding:0.1em 0.75em;
+         }
+
+    }
+
     
    /* #exercises {
         clear: left;
