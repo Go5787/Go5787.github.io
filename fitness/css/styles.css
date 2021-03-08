@@ -176,6 +176,43 @@ margin: 0 2%;
     width: 95%;
     height: 50%;
 }
+
+#form {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+/* style rules for form elements*/
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: Block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #b3b3b3;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+
 /* Style rules for footer*/
 footer p {
     font-size: 0.75em;
@@ -275,6 +312,37 @@ footer p a {
              Height: 450px;
          }
 
+         /* Tablet Viewpoint For Table*/
+         Table {
+             border: 1px solid #000;
+             border-collapse: Collapse;
+             Margin: 0 auto;
+             width: 100%;
+
+         }
+
+         Caption{
+             font-size: 1.5em;
+             font-weight: bold;
+             padding: 1%;
+         }
+
+         Th, Td {
+             Border: 1px solid #000;
+             Padding: 2%;
+         }
+
+        tr:nth-child(odd) {
+            background-color: #ccc;
+     }
+
+     /* tablet viewpoint style rule for form*/
+     form {
+         width: 70%;
+         margin: 0 auto;
+
+     }
+
  }
 
  /* Media Query for desktop viewpoint*/
@@ -345,6 +413,21 @@ footer p a {
          clear: left;
      }
 
+     /* desktop viewpoint: for form elements*/
+     form {
+         width: auto;
+     }
+
+     .form-grid {
+         display: grid;
+         grid-template-columns: auto auto auto;
+         grid-gap: 20px;
+     }
+
+     .btn {
+         grid-column: 1 / span 3;
+     }
+
 
 
  }
@@ -355,6 +438,10 @@ footer p a {
     #container {
         width: 1920px;
         margin: 0 auto;
+    }
+    
+    Table {
+        width: 80%;
     }
 
 }
